@@ -52,11 +52,17 @@ const faqs = [
   ["¿Qué información ayuda a preparar una cotización?", "Ubicación, uso del espacio, dimensiones aproximadas, equipos existentes, síntomas o necesidad y, cuando sea posible, fotografías o planos."],
 ];
 
-function Brand() {
+function Brand({ inverse = false }: { inverse?: boolean }) {
   return (
     <a className="brand" href="#inicio" aria-label="AIRECO S.A.S. — Inicio">
-      <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
-      <span className="brand-name">AIRECO<span>S.A.S.</span></span>
+      <Image
+        className="brand-logo"
+        src={inverse ? "/aireco-logo-inverse.png" : "/aireco-logo.png"}
+        alt="AIRECO S.A.S."
+        width={inverse ? 196 : 476}
+        height={inverse ? 72 : 119}
+        priority
+      />
     </a>
   );
 }
@@ -114,7 +120,7 @@ export default function Home() {
     <main>
       <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
         <div className="header-inner">
-          <Brand />
+          <Brand inverse />
           <nav className={menuOpen ? "is-open" : ""} aria-label="Navegación principal">
             <a href="#servicios" onClick={closeMenu}>Servicios</a><a href="#proceso" onClick={closeMenu}>Soluciones</a><a href="#sectores" onClick={closeMenu}>Sectores</a><a href="#proyectos" onClick={closeMenu}>Proyectos</a><a href="#nosotros" onClick={closeMenu}>Nosotros</a><a href="#contacto" onClick={closeMenu}>Contacto</a>
             <a className="nav-cta" href="#contacto" onClick={closeMenu}>Solicitar diagnóstico <ArrowDownRight /></a>
