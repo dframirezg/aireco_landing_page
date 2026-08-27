@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+// The landing has no request-specific data. This lets the GitHub Pages build
+// pre-render it as a static document while preserving the normal local/Sites flow.
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://aireco-sas.com"),
   title: "AIRECO S.A.S. | Ingeniería de aire acondicionado y ventilación",

@@ -120,7 +120,7 @@ export default function Home() {
     <main>
       <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
         <div className="header-inner">
-          <Brand inverse />
+          <Brand />
           <nav className={menuOpen ? "is-open" : ""} aria-label="Navegación principal">
             <a href="#servicios" onClick={closeMenu}>Servicios</a><a href="#proceso" onClick={closeMenu}>Soluciones</a><a href="#sectores" onClick={closeMenu}>Sectores</a><a href="#proyectos" onClick={closeMenu}>Proyectos</a><a href="#nosotros" onClick={closeMenu}>Nosotros</a><a href="#contacto" onClick={closeMenu}>Contacto</a>
             <a className="nav-cta" href="#contacto" onClick={closeMenu}>Solicitar diagnóstico <ArrowDownRight /></a>
@@ -193,7 +193,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><div className="shell footer-main"><div className="footer-brand"><Brand /><p>Ingeniería de aire acondicionado y ventilación mecánica para organizaciones que necesitan continuidad y confort.</p></div><div className="footer-links"><strong>Explorar</strong><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#sectores">Sectores</a><a href="#proyectos">Proyectos</a></div><div className="footer-links"><strong>Contacto</strong><a href={`mailto:${CONTACT.email}`}>Correo</a><a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noreferrer">WhatsApp</a><a href="https://www.zonapagos.com/t_Airecosas/" target="_blank" rel="noreferrer">Pagos en línea</a><span>Bogotá, Colombia</span></div><div className="footer-badge"><Wind /><span>COBERTURA<br /><b>NACIONAL</b></span></div></div><div className="shell footer-bottom"><span>© 2026 AIRECO S.A.S.</span><div><span>Política de privacidad</span><span>Tratamiento de datos</span></div><span>INGENIERÍA DEL AIRE</span></div></footer>
+      <footer><div className="shell footer-main"><div className="footer-brand"><Brand inverse /><p>Ingeniería de aire acondicionado y ventilación mecánica para organizaciones que necesitan continuidad y confort.</p></div><div className="footer-links"><strong>Explorar</strong><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#sectores">Sectores</a><a href="#proyectos">Proyectos</a></div><div className="footer-links"><strong>Contacto</strong><a href={`mailto:${CONTACT.email}`}>Correo</a><a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noreferrer">WhatsApp</a><a href="https://www.zonapagos.com/t_Airecosas/" target="_blank" rel="noreferrer">Pagos en línea</a><span>Bogotá, Colombia</span></div><div className="footer-badge"><Wind /><span>COBERTURA<br /><b>NACIONAL</b></span></div></div><div className="shell footer-bottom"><span>© 2026 AIRECO S.A.S.</span><div><span>Política de privacidad</span><span>Tratamiento de datos</span></div><span>INGENIERÍA DEL AIRE</span></div></footer>
       <a className="mobile-contact" href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noreferrer"><Phone /> Hablar con AIRECO</a>
     </main>
   );
