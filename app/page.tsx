@@ -57,10 +57,10 @@ function Brand({ inverse = false }: { inverse?: boolean }) {
     <a className="brand" href="#inicio" aria-label="AIRECO S.A.S. — Inicio">
       <Image
         className="brand-logo"
-        src={inverse ? "/aireco-logo-inverse.png" : "/aireco-logo.png"}
+        src={inverse ? "/brand/aireco-logo-inverse.svg" : "/brand/aireco-logo-original.svg"}
         alt="AIRECO S.A.S."
-        width={inverse ? 196 : 476}
-        height={inverse ? 72 : 119}
+        width={5340}
+        height={1231}
         priority
       />
     </a>

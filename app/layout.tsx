@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ["aire acondicionado Colombia", "ventilación mecánica", "mantenimiento HVAC", "ingeniería de climatización", "AIRECO"],
   openGraph: { title: "AIRECO S.A.S. | Ingeniería para que el aire trabaje mejor", description: "Más de 15 años diseñando, instalando y manteniendo sistemas HVAC en Colombia.", type: "website", locale: "es_CO", images: [{ url: "/og.png", width: 1731, height: 909, alt: "AIRECO S.A.S. — Ingeniería para que el aire trabaje mejor" }] },
   twitter: { card: "summary_large_image", title: "AIRECO S.A.S.", description: "Ingeniería para que el aire trabaje mejor.", images: ["/og.png"] },
-  icons: { icon: "/aireco-isotipo.png", shortcut: "/aireco-isotipo.png" },
+  icons: { icon: "/brand/aireco-isotipo-original.svg", shortcut: "/brand/aireco-isotipo-original.svg" },
 };
 
 const structuredData = {

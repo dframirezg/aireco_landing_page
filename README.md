@@ -137,7 +137,7 @@ La landing es actualmente una sola ruta y concentra su contenido en `app/page.ts
 | Preguntas frecuentes | Arreglo `faqs`. |
 | Titulares y textos de secciones | JSX del componente `Home`. |
 | Fotografías de proyectos | `public/aireco-project-01.jpg` a `public/aireco-project-05.jpg`. |
-| Logos | `public/aireco-logo.png`, `public/aireco-logo-inverse.png` y `public/aireco-isotipo.png`. |
+| Logos | Versiones vectoriales activas en `public/brand/`; los PNG originales se conservan como respaldo. |
 | Título, descripción y previsualización social | `app/layout.tsx`. |
 | Estilos y breakpoints | `app/globals.css`. |
 
